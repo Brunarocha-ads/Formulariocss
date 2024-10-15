@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>CSS</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="preconnect" href="http://fonts.googleapis.com/css"/>
+    <link rel="preconnect" href="http://fonts.gstatic.com"crossorigin />
+    <link href="http://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" 
+    rel="stylesheet"/>
+
+</head>
+<body>
+    <header>
+        <h2>Crie uma Conta</h2>
+    </header>
+    <form class="form-container" action="./success.html">
+<div class="form-row">
+<label for="fullname" Class="form-label">Nome Completo</label>
+<input type="text" id="fullname" name="fullname" placeholder="Digite seu nome completo" required>
+</div>
+<div class="form-row">
+    <label for="email" Class="form-label">E-mail</label>
+    <input type="email" id="email" name="email" class="form-input" placeholder="Digite seu E-mail">
+</div>
+<div class="form-row">
+    <label for="password" Class="form-label">Senha</label>
+    <input type="password" id="password" name="password" class="form-input" placeholder="Digite sua senha" >
+</div>
+<div class="form-row">
+    <label for="birthdate"Class="form-label">Data de Nascimento</label>
+    <input type="date" id="date" name="birtdate" class="form-input" required>
+</div>
+<div class="form-row">
+    <label for="gender" Class="form-label">Gênero</label>
+    <select id="gender" name="gender" class="form-input" required>
+        <option value="">Selecione</option>
+        <option value="male">Masculino</option>
+        <option value="female">Feminino</option>
+        <option value="other">Outro</option>
+    </select>
+</div>
+<div class="form-row">
+    <input id="terms" name="terms" type="checkbox" required>
+    <label for="terms"Class="form-small-label">Aceito as políticas de privacidade</label>
+    
+</div>
+<div class="form-row">
+    <input type="submit"value="Criar Conta" class="form-button"/>
+</div>
+
+
+    </form>
+</body>
+</html>
